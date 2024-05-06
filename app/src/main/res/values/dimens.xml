@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+
+    <dimen name="img_office_title">20sp</dimen>
+    <dimen name="user_avatar_end_margin">12dp</dimen>
+</resources>
