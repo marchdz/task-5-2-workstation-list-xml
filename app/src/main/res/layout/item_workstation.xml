@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/common_padding_default"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/vDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/line"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:importantForAccessibility="no"
+            android:padding="@dimen/common_padding_default"
+            android:src="@drawable/ico_calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_middle"
+            tools:text="Lunes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendar"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/ivCalendar"
+            app:layout_constraintTop_toTopOf="@id/ivCalendar" />
+
+        <TextView
+            android:id="@+id/tvAsigned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_workstation_day_asigned_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_big"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendar"
+            app:layout_constraintStart_toEndOf="@id/tvDay"
+            app:layout_constraintTop_toTopOf="@id/ivCalendar" />
+
+        <TextView
+            android:id="@+id/tvFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            tools:text="02"
+            android:textSize="@dimen/text_mid"
+            app:layout_constraintStart_toStartOf="@id/tvDay"
+            app:layout_constraintTop_toBottomOf="@id/vDivider" />
+
+        <TextView
+            android:id="@+id/tvPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            tools:text="55"
+            android:textSize="@dimen/text_mid"
+            android:layout_marginStart="115dp"
+            app:layout_constraintStart_toEndOf="@id/tvFloor"
+            app:layout_constraintTop_toBottomOf="@id/vDivider" />
+
+        <TextView
+            android:id="@+id/tvFloorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_workstation_floor_title"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvFloor"
+            app:layout_constraintTop_toBottomOf="@id/tvFloor" />
+
+        <TextView
+            android:id="@+id/tvPlaceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_workstation_place_title"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvPlace"
+            app:layout_constraintTop_toBottomOf="@id/tvPlace" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            tools:text="Madrid"
+            android:textSize="@dimen/text_mid"
+            app:layout_constraintStart_toStartOf="@id/tvFloor"
+            app:layout_constraintTop_toBottomOf="@id/tvFloorTitle" />
+
+        <TextView
+            android:id="@+id/tvSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            tools:text="Marketing"
+            android:textSize="@dimen/text_mid"
+            app:layout_constraintStart_toStartOf="@id/tvPlaceTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvPlaceTitle" />
+
+        <TextView
+            android:id="@+id/tvCityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/common_padding_default"
+            android:text="@string/item_workstation_office_title"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvFloor"
+            app:layout_constraintTop_toBottomOf="@id/tvCity" />
+
+        <TextView
+            android:id="@+id/tvSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_workstation_section_title"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tvSection"
+            app:layout_constraintTop_toBottomOf="@id/tvSection" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/common_padding_middle"
+            android:importantForAccessibility="no"
+            android:src="@drawable/question"
+            app:layout_constraintBottom_toBottomOf="@id/tvPlace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvPlace" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

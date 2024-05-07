@@ -3,7 +3,10 @@
     <dimen name="common_padding_min">8dp</dimen>
     <dimen name="common_padding_default">16dp</dimen>
     <dimen name="common_padding_middle">24dp</dimen>
-
-    <dimen name="img_office_title">20sp</dimen>
+    <dimen name="divider_height">1dp</dimen>
     <dimen name="user_avatar_end_margin">12dp</dimen>
+
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_mid">18sp</dimen>
+    <dimen name="text_big">20sp</dimen>
 </resources>
